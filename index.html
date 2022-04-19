@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Lucas Colaco</title>
+    <meta charset="UFT-8-">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--Header Icon-->
+    <link rel="shortcut icon" href="/Images/Logo_01-removebg-preview.png">
+
+    <!-- Bootstrap -->
+    <link href="Styles/BOOTSTRAP.CSS" rel="stylesheet">
+
+    <!--<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">-->
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="Styles/main.css">
+    <link rel="stylesheet" href="Styles/footerAnim.css">
+    <link rel="stylesheet" href="Styles/titleAnim.css">
+    <link rel="stylesheet" href="Styles/imgAnim.css">
+    <link rel="stylesheet" href="Styles/Sidebar.css">
+    <link rel="stylesheet" href="test.css">
+    <link rel="stylesheet" href="Styles/ImageModal.css">
+
+    <link rel="stylesheet" href="bootstrap-footer-17/bootstrap-footer-17/css/ionicons.min.css">
+    <link rel="stylesheet" href="bootstrap-footer-17/bootstrap-footer-17/css/style.css">
+
+
+    <!-- Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+
+<body>
+    <!--Sidebar-->
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div id="Sidebar">
+                    <input class="menu-icon" type="checkbox" id="menu-icon" name="menu-icon" />
+                    <label for="menu-icon"></label>
+                    <nav class="nav">
+                        <ul class="pt-5">
+                            <li><a href="index.html">
+                                    <p class="sidebar_Text">Home</p>
+                                </a></li>
+                            <li><a href="project.html">
+                                    <p class="sidebar_Text">Portfolio</p>
+                                </a></li>
+                            <li><a href="about.html">
+                                    <p class="sidebar_Text">About me</p>
+                                </a></li>
+                            <li><a href="contact.html">
+                                    <p class="sidebar_Text">Contact</p>
+                                </a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Sidebar End-->
+    <div class="center_page">
+        <!--Website Title-->
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col h1_title_container noselect">
+                    <h1>
+                        <span class="titel_pimary">H</span>
+                        <span class="titel_pimary">i</span>
+                        <br>
+                        <span class="titel_pimary">I</span>
+                        <span class="titel_pimary">'</span>
+                        <span class="titel_pimary">m&nbsp;</span>
+
+                        <span class="titel_pimary">L</span>
+                        <span class="titel_pimary">u</span>
+                        <span class="titel_pimary">c</span>
+                        <span class="titel_pimary">a</span>
+                        <span class="titel_pimary">s</span>
+                    </h1>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col">
+                    <h2 class="text_title c_white"> About Me</h2>
+                    <p class="text_style c_darkwhite">Some text about me. Some text about me. I am lorem ipsum
+                        consectetur
+                        adipiscing
+                        elit, sed do eiusmod tempor incididunt
+                        ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                        exercitat ionullamco laboris nisi ut aliquip
+                        ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                        cillum
+                        dolore eu</p>
+                    <p class="text_style c_darkwhite">fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                        non
+                        proident, sunt in
+                        culpa qui officia
+                        deserunt mollit anim id est laborum consectetur
+                        adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                        enim ad
+                        minim
+                        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat.</p>
+                </div>
+            </div>
+        </div>
+
+        <!--Projects-->
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col">
+                    <h2 class="text_title c_white">Projects Overview</h2>
+                    <div class="hr_subtitle">
+                        <hr>
+                    </div>
+                </div>
+                <div class="row" id="gallery">
+                    <div class="col-12 col-sm-6 col-lg-3 ">
+                        <div class="img_container img_blur">
+                            <figure class="image">
+                                <img class="w-100 m-1 imgModal" onclick="ModalOpen(this);"
+                                    src="Images/Projekts_IMG/Fotography/Faro 7_June_2021.jpeg">
+                            </figure>
+                            <div class="hidden">
+                                <div class="img_text_container ">
+                                    <span class="img_text">Faro Portugal<br>7/06/2021</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="img_blur">
+                            <figure class="image">
+                                <img class="w-100 m-1 imgModal" onclick="ModalOpen(this);"
+                                    src="Images/Projekts_IMG/Drawings/Andre.jpeg">
+                            </figure>
+                            <div class="hidden">
+                                <div class="img_text_container">
+                                    <span class="img_text">Portrait Drawing<br>1/04/2021</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="img_container img_blur">
+                            <figure class="image">
+                                <img class="w-100 m-1 imgModal" onclick="ModalOpen(this);"
+                                    src="Images/Projekts_IMG/Drawings/Drawing (1.2).jpeg">
+                            </figure>
+                            <div class="hidden">
+                                <div class="img_text_container">
+                                    <span class="img_text">Drawing</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="img_container img_blur">
+                            <figure class="image">
+                                <img class="w-100 m-1 imgModal" onclick="ModalOpen(this);"
+                                    src="Images/Projekts_IMG/Fotography/5_Dec_2021 (4).jpeg">
+                            </figure>
+                            <div class="hidden">
+                                <div class="img_text_container">
+                                    <span class="img_text">Dättwil<br>5/12/21</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Photo Grid-->
+                <!-- Modal Image -->
+                <div id="myModal" class="modal">
+                    <span onclick="ModalClose(this);" class="closebtn">&times;</span>
+                    <img style="width:100%;" class="modal-content" id="modalImg">
+                    <div id="caption"></div>
+                </div>
+                <!-- Footer -->
+                <div class="container-fluid" ">
+                    <div class="row">
+                        <div class="col">
+                            <footer >
+                                <a href="https://www.instagram.com/lucas.gabriel.cc/" target="_blank">
+                                    <i class="fa fa-instagram sozial_Media_Link"></i>
+                                </a>
+
+                                <i class="fa fa-snapchat sozial_Media_Link"></i>
+                                <i class="fa fa-pinterest-p sozial_Media_Link"></i>
+                                <i class="fa fa-linkedin sozial_Media_Link"></i>
+
+                                <!--Footer Animation-->
+                                <hr class="footer-animation" id="thread1">
+                                <hr id="thread1Half" class="right">
+                                <hr id="thread2">
+                                <hr id="thread3" class="right">
+                                <hr id="thread4">
+                                <hr id="thread5" class="right">
+                                <hr id="thread6">
+                            </footer>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+
+</html>
+
+<!-- JavaScript -->
+<script src="JS/modal.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+</script>
