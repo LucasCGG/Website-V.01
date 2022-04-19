@@ -573,7 +573,6 @@ body {
 
 }
 
-
 /*Modal Container*/
 .modal {
     display: none;
@@ -634,9 +633,7 @@ footer {
     -webkit-background-clip: text;
 }
 
-.fa-snapchat {
-    color: yellow;
-}
+
 
 .fa-pinterest-p {
     color: red;
