@@ -133,9 +133,10 @@
         <div class="row" id="gallery">
             <div class="col-12 col-sm-6 col-lg-3 ">
                 <div class="img_container img_blur">
-                    <figure class="image"><img id="cpt1" class="w-100 m-1 imgModal" onclick="modalCaption(); ModalOpen(this); "
+                    <figure class="image">
+                        <img class="w-100 m-1 imgModal" onclick="modalCaption(this); ModalOpen(this); "
                             src="Images/Projekts_IMG/Programming/Minigame_Processing.jpg"
-                            alt="20/12/2021 <br> This is a litle Minigame made with Java on 'Processing'">
+                            alt="20/12/2021 <br> This is a litle Minigame made with Java on 'Processing">
                     </figure>
                     <div class="hidden">
                         <div class="img_text_container">
@@ -144,10 +145,12 @@
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-sm-6 col-lg-3">
+            <div class="col-12 col-sm-6 col-lg-3 ">
                 <div class="img_container img_blur">
                     <figure class="image">
-                        <img class="w-100 m-1 imgModal" onclick="ModalOpen(this); modalCaption();" src="" alt="coming soon">
+                        <img class="w-100 m-1 imgModal" onclick="modalCaption(this); ModalOpen(this); "
+                            src="Images/Projekts_IMG/Programming/TicTacToe.jpg"
+                            alt="01/05/2021 <br> TicTactoe made with Java">
                     </figure>
                     <div class="hidden">
                         <div class="img_text_container">
@@ -156,10 +159,12 @@
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-sm-6 col-lg-3">
+            <div class="col-12 col-sm-6 col-lg-3 ">
                 <div class="img_container img_blur">
                     <figure class="image">
-                        <img class="w-100 m-1 imgModal" onclick="ModalOpen(this);" src="" alt="coming soon">
+                        <img class="w-100 m-1 imgModal" onclick="modalCaption(this); ModalOpen(this); "
+                            src="Images/Projekts_IMG/Programming/Calculator.png"
+                            alt="07/05/2021 <br> Calculator made with Java">
                     </figure>
                     <div class="hidden">
                         <div class="img_text_container">
@@ -255,9 +260,24 @@
         </div>
     </div>
 </body>
-
 </html>
 
+
+
+<script>
+    var modalImg = document.getElementById("modalImg");
+    var menuIcon = document.getElementById("Sidebar");
+
+    window.onclick = function(event) {
+    if (event.target == myModal) {
+        modalImg.parentElement.style.display = "none";
+        menuIcon.parentElement.style.display = "block";
+
+        $('body').removeClass('stop_scrolling');
+        $('footer').removeClass('no_show');
+        }
+    }
+</script>
 <!-- JavaScript -->
 <script src="JS/modal.js"></script>
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>

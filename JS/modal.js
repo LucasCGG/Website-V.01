@@ -1,8 +1,6 @@
 function ModalOpen(imgs) {
     var modalImg = document.getElementById("modalImg");
     var menuIcon = document.getElementById("Sidebar");
-    
-    
 
     modalImg.src = imgs.src;
     modalImg.parentElement.style.display = "block";
@@ -24,7 +22,7 @@ function ModalClose(imgs){
     $('footer').removeClass('no_show');
 }
 
-function modalCaption(){
-    var x = document.getElementById("cpt1").alt;
-    document.getElementById("cpt_text").innerHTML = x;
+function modalCaption(imgs){
+    
+    document.getElementById("cpt_text").innerHTML = imgs.alt;
 }

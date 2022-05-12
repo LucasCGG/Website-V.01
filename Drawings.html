@@ -399,6 +399,22 @@
 
 </html>
 
+
+
+<script>
+    var modalImg = document.getElementById("modalImg");
+    var menuIcon = document.getElementById("Sidebar");
+
+    window.onclick = function(event) {
+    if (event.target == myModal) {
+        modalImg.parentElement.style.display = "none";
+        menuIcon.parentElement.style.display = "block";
+
+        $('body').removeClass('stop_scrolling');
+        $('footer').removeClass('no_show');
+    }
+    }
+</script>
 <!-- JavaScript -->
 <script src="JS/modal.js"></script>
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>

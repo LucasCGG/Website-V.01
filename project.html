@@ -133,7 +133,7 @@
                 <div class="img_container img_blur">
                     <figure class="image">
                         <img class="w-100 m-1 imgModal" onclick="ModalOpen(this);"
-                            src="Images/Projekts_IMG/Fotography/Faro 7_June_2021.jpeg">
+                            src="Images/Projekts_IMG/Fotography/Faro_7_June_2021.jpeg">
                     </figure>
                     <div class="hidden">
                         <div class="img_text_container">
@@ -163,7 +163,7 @@
                     </figure>
                     <div class="hidden">
                         <div class="img_text_container">
-                            <span class="img_text">Zürich HB<br> 1/01/2021</span>
+                            <span class="img_text">Z&uuml;rich HB<br> 1/01/2021</span>
                         </div>
                     </div>
                 </div>
@@ -176,7 +176,7 @@
                     </figure>
                     <div class="hidden">
                         <div class="img_text_container">
-                            <span class="img_text">Dättwil<br>5/12/21</span>
+                            <span class="img_text">D&auml;ttwil<br>5/12/21</span>
                         </div>
                     </div>
                 </div>
@@ -202,7 +202,7 @@
                     </figure>
                     <div class="hidden">
                         <div class="img_text_container">
-                            <span class="img_text">Hardbrücke<br>20/11/2021</span>
+                            <span class="img_text">Hardbr&uuml;cke<br>20/11/2021</span>
                         </div>
                     </div>
                 </div>
@@ -215,7 +215,7 @@
                     </figure>
                     <div class="hidden">
                         <div class="img_text_container">
-                            <span class="img_text">Zürich<br>1/01/2021</span>
+                            <span class="img_text">Z&uuml;rich<br>1/01/2021</span>
                         </div>
                     </div>
                 </div>
@@ -257,8 +257,25 @@
         </div>
     </div>
 </body>
-
 </html>
+
+
+
+
+<script>
+    var modalImg = document.getElementById("modalImg");
+    var menuIcon = document.getElementById("Sidebar");
+
+    window.onclick = function(event) {
+    if (event.target == myModal) {
+        modalImg.parentElement.style.display = "none";
+        menuIcon.parentElement.style.display = "block";
+
+        $('body').removeClass('stop_scrolling');
+        $('footer').removeClass('no_show');
+    }
+    }
+</script>
 
 <!-- JavaScript -->
 <script src="JS/modal.js"></script>
